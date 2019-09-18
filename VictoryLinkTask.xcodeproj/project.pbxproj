@@ -51,6 +51,8 @@
 		8142E7DC2332CB63008F59DF /* BaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142E7DB2332CB63008F59DF /* BaseHandler.swift */; };
 		8142E7DE2332CFD4008F59DF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142E7DD2332CFD3008F59DF /* ImageCollectionViewCell.swift */; };
 		8142E7E02332D1A5008F59DF /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142E7DF2332D1A4008F59DF /* ImageViewer.swift */; };
+		8142E7E22332D433008F59DF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142E7E12332D433008F59DF /* Photo.swift */; };
+		8142E7E42332D4B4008F59DF /* PhotoSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142E7E32332D4B4008F59DF /* PhotoSizes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		8142E7DB2332CB63008F59DF /* BaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHandler.swift; sourceTree = "<group>"; };
 		8142E7DD2332CFD3008F59DF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		8142E7DF2332D1A4008F59DF /* ImageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
+		8142E7E12332D433008F59DF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		8142E7E32332D4B4008F59DF /* PhotoSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSizes.swift; sourceTree = "<group>"; };
 		BFADF758757D5DE0B77763B8 /* Pods-VictoryLinkTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoryLinkTaskTests.release.xcconfig"; path = "Target Support Files/Pods-VictoryLinkTaskTests/Pods-VictoryLinkTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6BA986ACECBBA9C3A6B5CF8 /* Pods-VictoryLinkTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoryLinkTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-VictoryLinkTaskTests/Pods-VictoryLinkTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +216,8 @@
 		8142E78523329F78008F59DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8142E7E12332D433008F59DF /* Photo.swift */,
+				8142E7E32332D4B4008F59DF /* PhotoSizes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -526,6 +532,8 @@
 				8142E76723329F22008F59DF /* ViewController.swift in Sources */,
 				8142E7DE2332CFD4008F59DF /* ImageCollectionViewCell.swift in Sources */,
 				8142E7982332A17B008F59DF /* AlertView.swift in Sources */,
+				8142E7E22332D433008F59DF /* Photo.swift in Sources */,
+				8142E7E42332D4B4008F59DF /* PhotoSizes.swift in Sources */,
 				8142E7D92332CA5A008F59DF /* ImagesViewController.swift in Sources */,
 				8142E7B42332A7E0008F59DF /* UIViewExt.swift in Sources */,
 				8142E7AE2332A43D008F59DF /* LoginRouter.swift in Sources */,
