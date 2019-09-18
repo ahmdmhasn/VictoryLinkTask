@@ -18,7 +18,7 @@ class RegistrationRouter {
     
     class func createView() -> UIViewController {
         
-        let view = storyboard.instantiateViewController(withIdentifier: "\(RegistrationVC.self)") as! RegistrationVC
+        let view = storyboard.instantiateViewController(withIdentifier: "\(RegistrationViewController.self)") as! RegistrationViewController
         let router = RegistrationRouter()
         let interactor = RegistrationInteractor()
         let presenter = RegistrationPresenter(view: view, interactor: interactor, router: router)

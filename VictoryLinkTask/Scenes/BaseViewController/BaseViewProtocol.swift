@@ -9,7 +9,7 @@
 import Foundation
 
 protocol BaseViewProtocol {
-    func showAlert(message: String?, button text: String?, delegate: CustomAlertViewDelegate?)
+    func showAlert(message: String?, button text: String?, delegate: AlertViewDelegate?)
     func showSVSuccess(message: String)
     func showLoading()
     func hideLoading()

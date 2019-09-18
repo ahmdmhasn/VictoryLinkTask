@@ -13,11 +13,9 @@ class RegistrationInteractor: RegistrationInteractorProtocol {
     
     weak var presenter: RegistrationPresenterProtocol?
     
-    var userService: UserServiceProtocol
-    
-    init() {
-        userService = UserService()
-    }
+    private lazy var userService: UserServiceProtocol = {
+        return UserService()
+    }()
     
     func createUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
@@ -25,7 +23,7 @@ class RegistrationInteractor: RegistrationInteractorProtocol {
             guard let strongSelf = self else { return }
             
             if let user = user {
-                strongSelf.userService.updateUser(.email, value: user.email ?? "")
+                strongSelf.userService.updateUser(.email, value: user.user.email ?? "")
                 strongSelf.presenter?.registrationSucceed()
             } else if let error = error {
                 strongSelf.presenter?.registrationFailedWithError(text: error.localizedDescription)

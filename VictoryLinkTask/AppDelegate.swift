@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
         
         checkClientToken()
         
@@ -31,8 +34,9 @@ extension AppDelegate {
         if Constants.userToken == nil {
             self.window?.rootViewController = LoginRouter.createView()
         } else {
-//            let landingVC = BaseRouter.recyclablesNavigationController()
-//            window?.rootViewController = UINavigationController(rootViewController: recyclablesVC)
+            let vc = LandingViewController(nibName: "\(LandingViewController.self)", bundle: nil)
+            let navigationController = UINavigationController(rootViewController: vc)
+            self.window?.rootViewController = navigationController
         }
     }
     

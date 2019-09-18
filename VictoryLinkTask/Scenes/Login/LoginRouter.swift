@@ -50,9 +50,9 @@ extension LoginRouter: LoginRouterProtocol {
     
     func showLandingViewController() {
         
-        let vc = ContainerRouter.createView()
-        
-        viewController?.present(vc, animated: true, completion: nil)
+        let vc = LandingViewController(nibName: "\(LandingViewController.self)", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: vc)
+        viewController?.present(navigationController, animated: true, completion: nil)
         
     }
     

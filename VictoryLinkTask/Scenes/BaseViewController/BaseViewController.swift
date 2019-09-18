@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class BaseViewController: UIViewController {
     
@@ -38,11 +39,11 @@ extension BaseViewController: BaseViewProtocol {
     }
     
     @objc func showLoading() {
-        activityIndicator.stopAnimating()
+        activityIndicator.startAnimating()
     }
     
     @objc func hideLoading() {
-        activityIndicator.startAnimating()
+        activityIndicator.dismissLoader()
     }
     
 }
