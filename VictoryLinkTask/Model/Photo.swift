@@ -13,4 +13,5 @@ struct Photo {
     var id: String
     var title: String
     var photoSizes: [PhotoSize]
+    
 }
