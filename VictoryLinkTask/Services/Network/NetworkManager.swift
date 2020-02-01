@@ -22,7 +22,7 @@ class NetworkManager {
     private init() {}
     
     static let environment: NetworkEnvironment = .production
-    static let myAPIKey = "96759a8ba4464d2de60ee0a56e5b6207"
+    static let myAPIKey = ""
     let provider = MoyaProvider<FlickrAPI>(plugins: [/*NetworkLoggerPlugin(verbose: true)*/])
 }
 
